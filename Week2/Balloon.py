@@ -17,7 +17,7 @@ class Balloon:
         # When converting to Java: make the capacity parameter optional
         # by making two different constructors, one with capacity, one without
 
-    def getColor(self) -> int:
+    def getColor(self) -> str:
         """Return the color of this balloon."""
 
         return self.color
@@ -32,7 +32,7 @@ class Balloon:
 
         self.amount = amnt
 
-    def setCapacity(self, amnt: int) -> int:
+    def setCapacity(self, amnt: int) -> None:
         """Set this balloon's total air capacity."""
         
         self.capacity = amnt
