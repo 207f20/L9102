@@ -4,7 +4,7 @@ package designpatterns.observer;
 public class LightBulbObserver1 implements Observer {
 	
 	@Override
-	public void update(Observable o, Object arg) {
-		System.out.println(((LightBulb)o).toString() + "has Changed");
+	public void update() {
+		System.out.println("Something has Changed");
 	}
 }

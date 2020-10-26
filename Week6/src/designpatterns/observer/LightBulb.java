@@ -11,19 +11,19 @@ public class LightBulb extends Observable {
 	public void turnOn() {
 		if (this.bulbStatus != ON) {
 			this.bulbStatus = ON;
-			this.notifyObservers("bulb turned on");
+			this.notifyObservers();
 		}
 	}
 
 	public void turnOff() {
 		if (this.bulbStatus != OFF) {
 			this.bulbStatus = OFF;
-			this.notifyObservers("bulb turned off");
+			this.notifyObservers();
 		}
 	}
 
 	public void flip() {
 		this.bulbStatus = !this.bulbStatus;
-		this.notifyObservers("bulb turned " + this.bulbStatus);
+		this.notifyObservers();
 	}
 }
